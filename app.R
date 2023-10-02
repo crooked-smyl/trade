@@ -26,7 +26,7 @@
 
 # docker run -d --rm -p 3838:3838 trade .
 
-# docker run -d -p 5000:5000 trade
+# docker run -d -p 8080:8080 trade
 
 
 
