@@ -31,7 +31,7 @@ COPY catalogue.R catalogue.R
 COPY product.R product.R
 COPY db.sqlite db.sqlite
 COPY www www
-COPY Trade_Catalogue.Rproj Trade_Catalogue.Rproj
+COPY TradeCatalogue.Rproj TradeCatalogue.Rproj
 
 #COPY ./D/Github/ESCABOT/R /srv/shiny-server/
 #EXPOSE 3838
