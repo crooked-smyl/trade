@@ -103,7 +103,7 @@ source("product.R")
 source("cata.R")
 source("catalogue.R")
 
-#options(shiny.host = '0.0.0.0')
+options(shiny.host = '0.0.0.0')
 #options(shiny.port = 8080)
 
 # dataframe that holds usernames, passwords and other user data
