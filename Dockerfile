@@ -34,11 +34,11 @@ COPY www www
 COPY TradeCatalogue.Rproj TradeCatalogue.Rproj
 
 #COPY ./D/Github/ESCABOT/R /srv/shiny-server/
-EXPOSE 8080
+#EXPOSE 8080
 #CMD ["/usr/bin/shiny-server"]
 
 #CMD Rscript app.R
 
-CMD ["R", "-e", "shiny::runApp('/home/shinyusr', host='0.0.0.0', port=8080)"]
+#CMD ["R", "-e", "shiny::runApp('/home/shinyusr', host='0.0.0.0', port=8080)"]
 
-#CMD ["R", "-e", "shiny::runApp('/home/shinyusr')"]
+CMD ["R", "-e", "shiny::runApp('/home/shinyusr')"]
