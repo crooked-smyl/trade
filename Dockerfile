@@ -34,7 +34,7 @@ COPY www www
 COPY TradeCatalogue.Rproj TradeCatalogue.Rproj
 
 #COPY ./D/Github/ESCABOT/R /srv/shiny-server/
-#EXPOSE 3838
+EXPOSE 8080
 #CMD ["/usr/bin/shiny-server"]
 
 #CMD Rscript app.R

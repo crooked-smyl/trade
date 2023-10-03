@@ -20,7 +20,7 @@
 # remember to set the path for the working directory the parent directory.
 # Set-Location -Path C:\Users\user\Documents\Github\docker-trial
 
-# Set-Location -Path D:\Github\Trade_Catalogue
+# Set-Location -Path D:\Github\TradeCatalogue
 
 # docker build -t trade .
 
