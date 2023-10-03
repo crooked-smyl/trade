@@ -407,7 +407,7 @@ server <- function(input, output) {
   
   
   
-  gc()
+#  gc()
   
 }
 

@@ -39,6 +39,6 @@ COPY TradeCatalogue.Rproj TradeCatalogue.Rproj
 
 #CMD Rscript app.R
 
-#CMD ["R", "-e", "shiny::runApp('/home/shinyusr', host='0.0.0.0', port=8080)"]
+CMD ["R", "-e", "shiny::runApp('/home/shinyusr', host='0.0.0.0', port=8080)"]
 
-CMD ["R", "-e", "shiny::runApp('/home/shinyusr')"]
+#CMD ["R", "-e", "shiny::runApp('/home/shinyusr')"]
