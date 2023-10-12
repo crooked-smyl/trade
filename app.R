@@ -119,7 +119,18 @@ user_base <- tibble::tibble(
 login_tab <- bslib::nav_panel(
   title = icon("lock"), 
   value = "login", 
-  shinyauthr::loginUI("login")
+ # shinyauthr::loginUI("login"),
+  
+  
+  shinyauthr::loginUI(id = "login",
+                      error_message = "Invalid username or password!",
+                      login_title = tagList(span("Login",style = "color: white;")),
+                      additional_ui = tagList(HTML("Username: user1<br>Password: pass1"))
+  )
+  
+  
+  
+  
 )
 
 # additional tabs to be added after login
@@ -172,6 +183,11 @@ ui <- ui <- page_fluid(
               
               
               nav_spacer(),
+              
+    #          bslib::nav_panel("Presentation",
+    #                           uiOutput('markdown')
+                               
+    #          ),         
               
     bslib::nav_panel("Trade Catalogue",
                      catalogueui("my_first_module_1")
@@ -406,6 +422,12 @@ server <- function(input, output) {
 #  })
   
   
+  
+  #### Presentation
+  
+#  output$markdown <- renderUI({
+#    HTML(markdown::markdownToHTML(knit('gsoko.rmd', quiet = TRUE)))
+#  })
   
 #  gc()
   
